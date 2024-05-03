@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="" width="100%" height="680px">
+    <script>
+
+        let imgarr=["https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
+
+       
+        let currentindex=0;
+        setInterval(()=>{
+            currentindex=(currentindex+1)%imgarr.length;
+            const images=document.querySelector('img')
+            images.src=imgarr[currentindex];
+        },2000)
+    </script>
+</body>
+</html>
